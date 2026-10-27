@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover premium luxury cars and book your next drive." />
+  <title>IGINITE — Luxury Car Rentals</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="#" class="logo">IGINITE</a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+      ☰
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#fleet">Our Fleet</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="#booking" class="nav-button">Book a Ride ↗</a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow"><span></span> PREMIUM CAR RENTALS</p>
+        <h1>DRIVE YOUR<br />OWN <span>CAR.</span></h1>
+        <p class="hero-description">
+          More than a ride. It's a statement.
+          Discover a world of luxury, performance and pure freedom.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#fleet" class="primary-button">Explore Collection </a>
+          <a href="#experience" class="text-button">Discover SWAG </a>
+        </div>
+
+        <div class="hero-stats">
+          <div><strong>50<span>+</span></strong><small>Luxury Cars</small></div>
+          <div><strong>1.2K<span>+</span></strong><small>Happy Clients</small></div>
+          <div><strong>24<span>/7</span></strong><small>Concierge</small></div>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <!-- <div class="image-label">THE ART OF DRIVING</div> -->
+        <div class="image-bottom">
+         
+        </div>
+      </div>
+
+      
+    </section>
+
+    <section class="booking-section" id="booking">
+      <div class="booking-heading">
+        <p class="eyebrow">YOUR NEXT DRIVE STARTS HERE</p>
+        <h2>Find your perfect ride as per your needs.</h2>
+      </div>
+
+      <form class="booking-form" id="bookingForm">
+        <label class="form-field">
+          <span>LOCATION</span>
+          <select id="location" required>
+            <option value="">Choose location</option>
+            <option>Delhi</option>
+            <option>Gurugram</option>
+            <option>Noida</option>
+            <option>Mumbai</option>
+          </select>
+        </label>
+
+        <label class="form-field">
+          <span>PICK-UP DATE</span>
+          <input type="date" id="pickupDate" required />
+        </label>
+
+        <label class="form-field">
+          <span>RETURN DATE</span>
+          <input type="date" id="returnDate" required />
+        </label>
+
+        <button type="submit" class="primary-button search-button">
+          Find My Car 
+        </button>
+      </form>
+      <p id="bookingMessage" class="booking-message" aria-live="polite"></p>
+    </section>
+
+    <section class="fleet-section section-padding" id="fleet">
+      <div class="section-top">
+        <div>
+          <p class="eyebrow">CURATED FOR YOUR LIFESTYLE</p>
+          <h2>Meet your <span>match.</span></h2>
+        </div>
+        <a href="#booking" class="text-button">Reserve your ride </a>
+      </div>
+
+      <div class="fleet-filters">
+        <button class="filter-button active" data-filter="all">All Cars</button>
+        <button class="filter-button" data-filter="sport">Sports</button>
+        <button class="filter-button" data-filter="luxury">Luxury</button>
+        <button class="filter-button" data-filter="suv">SUV</button>
+      </div>
+
+      <div class="car-grid">
+        <article class="car-card" data-category="sport">
+          <div class="car-image car-one">
+            <span class="car-tag">MOST POPULAR</span>
+          </div>
+          <div class="car-info">
+            <div><h3>Porsche 91</h3><p>Sports · Automatic</p></div>
+            <div class="car-price">₹18,000<small> / day</small></div>
+          </div>
+          <a href="#booking" class="car-link" data-car="Porsche 911">Book this car </a>
+        </article>
+
+        <article class="car-card" data-category="luxury">
+          <div class="car-image car-two">
+            <span class="car-tag">PURE ELEGANCE</span>
+          </div>
+          <div class="car-info">
+            <div><h3>Mercedes-Benz</h3><p>Luxury · Automatic</p></div>
+            <div class="car-price">₹15,000<small> / day</small></div>
+          </div>
+          <a href="#booking" class="car-link" data-car="Mercedes-Benz">Book this car </a>
+        </article>
+
+        <article class="car-card" data-category="suv">
+          <div class="car-image car-three">
+            <span class="car-tag">BUILT FOR POWER</span>
+          </div>
+          <div class="car-info">
+            <div><h3>Range Rover</h3><p>SUV · Automatic</p></div>
+            <div class="car-price">₹20,000<small> / day</small></div>
+          </div>
+          <a href="#booking" class="car-link" data-car="Range Rover">Book this car </a>
+        </article>
+      </div>
+      
+    </section>
+
+    <section class="experience-section" id="experience">
+      <div class="experience-image"></div>
+      <div class="experience-content">
+        <p class="eyebrow">NOT JUST A RENTAL</p>
+        <h2>Make every<br />arrival <span>iconic.</span></h2>
+        <p>
+          From spontaneous weekend escapes to unforgettable special occasions,
+          your perfect drive deserves a premium experience.
+        </p>
+        <ul>
+          <li><span>01</span> Carefully selected premium cars</li>
+          <li><span>02</span> Flexible booking experience</li>
+          <li><span>03</span> Personalised customer support</li>
+        </ul>
+        <a href="#booking" class="primary-button">Start Your Journey </a>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <p class="eyebrow">YOUR STORY YOUR DRIVE.</p>
+      <h2>Ready to make<br />an <span>entrance?</span></h2>
+      <a href="#booking" class="primary-button">Let's Get To Moving </a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#home" class="logo">Iginite</a>
+    <p>Drive different. Feel different.</p>
+    <p>© <span id="year"></span> Iginite Rentals. Demo website.</p>
+  </footer>
+
+</body>
+</html>
